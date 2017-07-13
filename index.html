@@ -6,10 +6,6 @@
     <title>traval</title>
     <link type="text/css" rel="stylesheet" href="css/travel.css"/>
     <script src="js/travel.js" type="text/javascript"></script>
-    <!--
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/js/jquery-1.9.1.min.js"></script>-->
 </head>
 <body>
 <div>
@@ -40,32 +36,64 @@
 
     <!--出发地 start-->
 
-    <div class="modal fade bs-modal-from in" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="setfromId" style="display: none">
-        <div class="modal-dialog modal-lg" style="transform: translate(0px, 0px);">
-            <div id="cfd-wrapper" style="overflow: hidden;">
-                <div class="close" onclick="travel.switchFromMap(0)">close</div>
-                <div id="cfd-scroller" style="transition-property: transform; transform-origin: 0px 0px 0px; transform: translate(0px, 0px);">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">s</h3>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+    <div  class="setFrom"  id="setfromId">
+        <div class="close" onclick="travel.switchFromMap(0)">关闭</div>
+        <div class="panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">s</h3>
             </div>
+            <ul class="list-group" >
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span  class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                </li>
+            </ul>
         </div>
     </div>
-
-
+    <div id="setfromIdLay" ></div>
     <!--出发地 end-->
-
-
-
-
 
     <!-- travel type-->
     <div>
@@ -214,6 +242,7 @@
     </div>
 </div>
 <div class="bounder"></div>
+
 
 <div class="footer">
     <div class="item" onclick="travel.openNewPage('index.html')"><div><img src="svg/icon_home_h.svg"></div><span class="active">首页</span> </div>

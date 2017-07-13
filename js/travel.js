@@ -13,10 +13,14 @@ var travel={
         window.location.href=url;
     },
     switchFromMap:function (flag) {
-        if(flag)
+        if(flag){
             document.getElementById('setfromId').setAttribute("style","display:block");
-        else
-            document.getElementById('setfromId').setAttribute("style","display:none");
+            document.getElementById('setfromIdLay').setAttribute("style","display:block");
+        }
+        else {
+            document.getElementById('setfromId').setAttribute("style", "display:none");
+            document.getElementById('setfromIdLay').setAttribute("style", "display:none");
+        }
     },
     // classify
     classifyDistrictList:["china-line","around-line","internation-line","internation-line","self-line"],
