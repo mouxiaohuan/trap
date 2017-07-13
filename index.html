@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>traval</title>
+    <link type="text/css" rel="stylesheet" href="css/travel.css"/>
+    <script src="js/travel.js" type="text/javascript"></script>
+    <!--
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-1.9.1.min.js"></script>-->
+</head>
+<body>
+<div>
+    <div class="header">
+        <div class="content">
+            <div class="adviser">专属顾问</div>
+            <div class="photo"><img src="image/photo.png" ></div>
+            <div class="contact" >
+                <div class="name">丫丫</div>
+                <div>杭州塞纳河畔旅行社</div>
+                <div>联系方式：021-12334567</div>
+            </div>
+
+        </div>
+        <div class="call">
+            <div><img src="image/wode_icon_guwen.png"></div>
+            <span>咨询顾问</span>
+        </div>
+    </div>
+    <div class="search" >
+        <div class="inner">
+            <div class="from" onclick="travel.switchFromMap(1)"><img src="image/tab-icon-chufadi.png"></div>
+            <div class="search-ico"><img src="image/reach.png"></div>
+            <div onclick="travel.openNewPage('line.index.html')"> 搜索线路</div>
+        </div>
+    </div>
+
+
+    <!--出发地 start-->
+
+    <div class="modal fade bs-modal-from in" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="setfromId" style="display: none">
+        <div class="modal-dialog modal-lg" style="transform: translate(0px, 0px);">
+            <div id="cfd-wrapper" style="overflow: hidden;">
+                <div class="close" onclick="travel.switchFromMap(0)">close</div>
+                <div id="cfd-scroller" style="transition-property: transform; transform-origin: 0px 0px 0px; transform: translate(0px, 0px);">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">s</h3>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="?departure=石家庄"><span class="pull-left">石家庄</span><span class="pull-right setraio"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--出发地 end-->
+
+
+
+
+
+    <!-- travel type-->
+    <div>
+        <div class="travel-type">
+            <div ><img src="image/home_icon_guoneiyou .png" ></div>
+            <span>国内游</span>
+        </div>
+        <div class="travel-type">
+            <div ><img src="image/home_icon_chujingyou.png" ></div>
+            <span>出境游</span>
+        </div>
+        <div class="travel-type">
+            <div ><img src="image/home_icon_zhoubianyou .png" ></div>
+            <span>周边游</span>
+        </div>
+        <div class="travel-type">
+            <div ><img src="image/home_icon_ziyouxing.png" ></div>
+            <span>自由行</span>
+        </div>
+    </div>
+    <!-- Image boundary-->
+    <div class="travel-image-boundary">
+        <img src="image/home_img_wanzhuanshijie.png" >
+    </div>
+    <!-- travel menu-->
+    <div class="travel-menu" onclick="travel.switchItem(event)">
+        <div class="active" id="travel-clearance-tag" >甩尾清仓</div>
+        <div id="travel-hot-tag" >当季热玩</div>
+        <div id="travel-star-tag" >销量明星</div>
+    </div>
+    <div class="clear"></div>
+    <!-- travel item content for clearance -->
+    <div class="travel-item-content" id="travel-clearance">
+        <div class="first">
+            <div><img src="image/denglu_img_bg.png"></div>
+            <div class="travel-address">上海出发丨国内游</div>
+            <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮盛宴世纪皇冠系列五香游船畅游
+                <span class="money">
+                    <span class="money-code">¥</span>
+                    <span class="money-number">5999</span>
+                    <span  class="money-code">起</span>
+                </span>
+            </div>
+        </div>
+        <div class="second">
+            <div class="little-item">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                </span>
+            </div>
+            <div class="little-item right">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- travel item content for hot -->
+    <div class="travel-item-content" id="travel-hot" >
+        <div class="first">
+            <div><img src="image/fengguang1.jpg"></div>
+            <div class="travel-address">上海出发丨国内游</div>
+            <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮盛宴世纪皇冠系列五香游船畅游
+                <span class="money">
+                    <span class="money-code">¥</span>
+                    <span class="money-number">5999</span>
+                    <span  class="money-code">起</span>
+                </span>
+            </div>
+        </div>
+        <div class="second">
+            <div class="little-item">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                </span>
+            </div>
+            <div class="little-item right">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <!-- travel item content for star -->
+    <div class="travel-item-content" id="travel-star">
+        <div class="first">
+            <div><img src="image/0020032841623151_b.jpg"></div>
+            <div class="travel-address">上海出发丨国内游</div>
+            <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮盛宴世纪皇冠系列五香游船畅游
+                <span class="money">
+                    <span class="money-code">¥</span>
+                    <span class="money-number">5999</span>
+                    <span  class="money-code">起</span>
+                </span>
+            </div>
+        </div>
+        <div class="second">
+            <div class="little-item">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                </span>
+            </div>
+            <div class="little-item right">
+                <div><img src="image/denglu_img_bg.png"></div>
+                <div class="travel-address">上海出发丨国内游</div>
+                <div class="info">游轮盛宴世纪皇冠系列五香游船畅游游轮
+                </div>
+                <span class="money">
+                        <span class="money-code">¥</span>
+                        <span class="money-number">5999</span>
+                        <span  class="money-code">起</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bounder"></div>
+
+<div class="footer">
+    <div class="item"><div><img src="svg/icon_home_h.svg"></div><span class="active">首页</span> </div>
+    <div class="item"><div><img src="svg/icon_fenlei_n.svg"></div><span >分类</span> </div>
+    <div class="item"><div><img src="svg/icon_wode_n.svg"></div><span>我的</span> </div>
+</div>
+
+</body>
+</html>

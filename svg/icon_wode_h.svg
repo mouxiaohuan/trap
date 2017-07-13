@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M1,15h14v-0.778H1V15z M4.889,8c0.065-0.064-0.513-0.293-0.778-0.778c0.063-0.575,0.063-1.126,0-1.167
+			C4.218,5.717,4.288,5.328,4.5,5.278c0.143-0.152,0.126-1.454,0-1.944c0.161,0.014,0.248-1.014,0.778-1.556
+			C5.914,1.384,6.65,1.405,6.833,1.389c-0.083,0.036,0.237-0.204,0.389,0L8.389,1C8.35,1,8.609,1,8.778,1
+			c0.129,0.132,0.37,0.291,0.778,0.778c-0.053-0.098,0.74-0.178,1.167,0c0.397,0.378,0.586,0.855,0.778,1.556
+			c-0.113,0.764-0.1,1.17,0,1.556c-0.127,0.17-0.14,0.254,0,0.389c-0.14-0.135,0.079-0.011,0.389,0c-0.082,0.501-0.02,1.026,0,1.556
+			c-0.09,0.211-0.06,0.564-1.167,1.167c0.253-0.121-0.05,0.633-0.778,1.167c0.101,0.04,0.079,0.477,0,0.778
+			c0.163,0.374,0.277,0.595,0.778,0.778c0.288,0.046,2.321,0.285,3.111,1.167c0.787,0.548,0.974,0.595,1.167,2.333h-0.778H1
+			c0,0,0.085-1.022,0.389-1.167c-0.128-0.394-0.054-0.668,0.389-1.167c0.504-0.366,0.911-0.569,1.556-0.778
+			c0.188-0.109,0.674-0.197,1.167-0.389c0.288,0.068,0.91-0.042,1.167-0.389C6.006,10.283,5.243,8.616,4.889,8z"/>
+	</defs>
+	<use xlink:href="#SVGID_1_"  overflow="visible" fill-rule="evenodd" clip-rule="evenodd"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-234.667" y="-487.444" width="291.667" height="518.778"/>
+		</defs>
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-0.944" y="-0.944" clip-path="url(#SVGID_4_)" width="17.889" height="17.889"/>
+	</g>
+</g>
+</svg>
