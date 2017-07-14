@@ -5,10 +5,12 @@
 a:visited {
     text-decoration: none;
     border: 0;
+    color: #333333;
 }
 a:link {
     text-decoration: none;
     border: 0;
+    color: #333333;
 }
 
 html,body{height: 100%}
@@ -79,12 +81,16 @@ html,body{height: 100%}
     width: 100%;
     padding:20px 10px ;
     background-color: white;
+    overflow:hidden;
+
  }
 .search .inner{
-    width: 100%;  background-color: #E8EBF1;
+    width: calc(100% - 60px);
+    background-color: #E8EBF1;
     border-radius: 3px;
     height: 40px;
     font-size: 16px;
+    float:right;
 }
 /*set from place */
 .setFrom{position: fixed;z-index: 1900;height: 50%; overflow: scroll;-webkit-overflow-scrolling: touch;bottom:0;width:100%;background-color: white;border-top:1px solid #dfe1e3;}
@@ -99,7 +105,7 @@ html,body{height: 100%}
 
 
 
-.search .from{width: 20px;height:20px; overflow: hidden; float: left;margin: 6px}
+.search .from{width: 40px;height:20px; overflow: hidden; float: left;margin: 6px 0px 6px 6px; color:#3B91FF}
 .search .from img{width:100%;height:100%}
 .search .search-ico{margin-left:25%}
 .search .search-ico,.search .inner div{float: left; margin-top: 8px}
